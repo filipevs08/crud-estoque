@@ -4,5 +4,6 @@
 
 🚀 Frameworks/Libraries: Express, mysql2, express-validator
 -
+
 ⏩ Exemplo
-<img url="/example.png" alt="Example image">
+![example pic](https://github.com/user-attachments/assets/f42fff86-821e-4bd5-a58c-18bc5b04dae3)
