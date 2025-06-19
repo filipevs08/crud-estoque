@@ -5,7 +5,7 @@ const categorieInput = document.querySelector(".categorieInput");
 const quantityInput = document.querySelector(".quantityInput");
 
 const fetchProducts = async () => {
-  const res = await fetch("http://localhost:3333/products");
+  const res = await fetch("http://localhost:3000/products");
   const items = await res.json();
   return items;
 };
@@ -28,7 +28,7 @@ const validateInput = () => {
   createProduct();
 };
 const deleteProduct = async (id) => {
-  await fetch(`http://localhost:3333/delete-product/${id}`, {
+  await fetch(`http://localhost:3000/delete-product/${id}`, {
     method: "DELETE",
   });
   loadProducts();
@@ -40,7 +40,7 @@ const createProduct = async () => {
     quantity: parseInt(quantityInput.value),
   };
   // O segundo parametro da fetch é um objeto de configuração
-  const result = await fetch("http://localhost:3333/create-product", {
+  const result = await fetch("http://localhost:3000/create-product", {
     method: "POST",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify(product),
@@ -52,7 +52,7 @@ const createProduct = async () => {
 const updateProduct = async (product) => {
   const { ID, name, categorie, quantity } = product;
 
-  await fetch(`http://localhost:3333/update-product/${ID}`, {
+  await fetch(`http://localhost:3000/update-product/${ID}`, {
     method: "PUT",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify({ name, categorie, quantity }),
