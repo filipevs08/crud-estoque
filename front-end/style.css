@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgb(253, 253, 255);
+}
+header {
+  background-color: #193dcd;
+  padding: 20px;
+  color: white;
+}
+header img {
+  max-width: 5%;
+}
+#logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1.5%;
+}
+main {
+  background-color: rgb(221, 217, 217);
+  padding: 20px;
+  width: 90%;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.add-form {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 15px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+button[type="submit"] {
+  background-color: grey;
+  height: 50px;
+  width: 50px;
+  border: none;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  padding: 10px 5px;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+td {
+  color: #000000;
+  font-weight: 600;
+}
+.action-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.action-btn:nth-child(1) {
+  background-color: rgb(240, 240, 70);
+  margin-right: 5px;
+}
+.action-btn:nth-child(2) {
+  background-color: rgb(255, 0, 0);
+}
